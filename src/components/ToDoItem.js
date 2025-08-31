@@ -1,13 +1,5 @@
-import React from "react";
-import {
-  IconCircle,
-  IconCircleFilled,
-  IconEdit,
-  IconTrash,
-} from "@tabler/icons-react";
+import { IconCircle, IconCircleFilled, IconTrash } from "@tabler/icons-react";
 
-//Representa una sola tarea. Muestra el texto, un botón para eliminar y (opcional)
-//  checkbox para marcar como hecha.
 export const ToDoItem = ({ item, funDelete, togglePacked }) => {
   const style = {
     display: "flex",
@@ -40,9 +32,6 @@ export const ToDoItem = ({ item, funDelete, togglePacked }) => {
         </p>
       </div>
       <div style={style}>
-        {/* <button className="btn-style" title="edit">
-          <IconEdit size={20} stroke={1.5} color="#007bff" />
-        </button> */}
         <button
           onClick={() => funDelete(item.id)}
           className="btn-style"
